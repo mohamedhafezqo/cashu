@@ -46,6 +46,7 @@ GOOGLE_REDIRECT_URI=YourRedirectPath ex: http://127.0.0.1:8001/api/driver/callba
 - Run `docker-compose build`
 - Run `docker-compose run php composer install` to install the dependencies.
 - Run `docker-compose up`
+- Visit `http://127.0.0.1:8001/api/driver/list`
 
 ### Running the tests
 
