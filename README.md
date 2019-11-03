@@ -9,7 +9,7 @@
 ![Class Diagram](diagram.png)
 
 ## End point
-- A REST API application to get transactions from multiple provider with criteria
+- A REST API application to get list files from google drive provider.
 
 - GET `[base-url]/api/driver/list`
 - Response 
@@ -34,7 +34,14 @@
 ```
 
 ### Installing
-
+- Copy `.env.dist` to `.env`
+- Create Credentials from `https://console.developers.google.com/apis/credentials`
+- Update your client_id and secret_key in `.env` file
+```json
+GOOGLE_CLIENT_ID=YourClientID
+GOOGLE_CLIENT_SECRET=YourClientSecret
+```
+- Alson don't forget your redirect URIs while your creating the Credentials.
 - Run `docker-compose build`
 - Run `docker-compose run php composer install` to install the dependencies.
 - Run `docker-compose up`
