@@ -7,8 +7,8 @@ use App\Contract\ProviderInterface;
 use App\Model\File;
 
 /**
- * Class DriverAdapter
- * @package App\Service
+ * Class GoogleDriver
+ * @package App\Provider
  */
 class GoogleDriver implements ProviderInterface
 {
@@ -42,7 +42,6 @@ class GoogleDriver implements ProviderInterface
      */
     public function listFiles(array $parameters = []): array
     {
-
         $parameters = array_merge($parameters, [
             'q' => "mimeType != 'application/vnd.google-apps.folder'",
             'pageSize' => self::PAGE_SIZE,
