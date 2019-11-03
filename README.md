@@ -40,7 +40,7 @@
 ```json
 GOOGLE_CLIENT_ID=YourClientID
 GOOGLE_CLIENT_SECRET=YourClientSecret
-GOOGLE_REDIRECT_URI=http://127.0.0.1:8001/api/driver/callback
+GOOGLE_REDIRECT_URI=YourRedirectPath ex: http://127.0.0.1:8001/api/driver/callback
 ```
 - Alson don't forget your redirect URIs while your creating the Credentials.
 - Run `docker-compose build`
