@@ -15,7 +15,7 @@
 - Response 
 ```json
 {
-    "transactions": [
+    "files": [
         {
             "id": "0B6mu60ho67DaLLFoRUO5ueHh6YUg2QjFrNDVtdzJzTV81U2JV",
             "name": "CROPPED-IMG_92020.JPG",
